@@ -2,7 +2,7 @@
 import './App.css';
 
 function App() {
-  const { version } = window['appConfig'] || 'demo';
+  const version = window['appConfig']?.version || 'demo';
 
   return (
     <div className="App">
